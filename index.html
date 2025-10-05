@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subjects</title>
+</head>
+<body>
+  <h1>Subjects</h1>
+  
+  
+  <h2 onclick="toggleTopics('math')">Mathematics</h2>
+  <ul id="math" style="display:none">
+  <li><a href="topics/algebra.html">Algebra</a></li>
+  <li><a href="topics/geometry.html">Geometry</a></li>
+  <li><a href="topics/calculus.html">Calculus</a></li>
+  <li><a href="topics/statistics.html">Statistics</a></li>
+  </ul>
+  
+  
+  <h2 onclick="toggleTopics('science')">Science</h2>
+  <ul id="science" style="display:none">
+  <li><a href="topics/physics.html">Physics</a></li>
+  <li><a href="topics/chemistry.html">Chemistry</a></li>
+  <li><a href="topics/biology.html">Biology</a></li>
+  <li><a href="topics/astronomy.html">Astronomy</a></li>
+  </ul>
+  
+  
+  <h2 onclick="toggleTopics('history')">History</h2>
+  <ul id="history" style="display:none">
+  <li><a href="topics/ancient.html">Ancient History</a></li>
+  <li><a href="topics/medieval.html">Medieval History</a></li>
+  <li><a href="topics/modern.html">Modern History</a></li>
+  <li><a href="topics/us.html">U.S. History</a></li>
+  </ul>
+  
+  
+  <script>
+    function toggleTopics(id) {
+    const el = document.getElementById(id);
+    el.style.display = el.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>
